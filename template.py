@@ -7,7 +7,7 @@
 # 핵심 알고리즘 또는 시간 복잡도 전략 요약
 # 예: 빠른 거듭제곱 → O(log b), 모듈러 연산 활용 등
 
-def solution(a, b):
+def solution(a: int, b: int):
     # 문제 로직 구현
     answer = 0
     return answer

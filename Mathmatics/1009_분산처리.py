@@ -5,7 +5,7 @@
 
 # 💡 idea. pow(a, b, mod)는 빠른 거듭제곱으로 O(log b), 모듈러 연산 활용
 
-def solution(a, b):
+def solution(a: int, b: int):
     last = pow(a, b, 10)
 
     # ❗ Note. power(a, b, mod)
