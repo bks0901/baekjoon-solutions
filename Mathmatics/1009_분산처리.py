@@ -3,7 +3,7 @@
 🔗 https://www.acmicpc.net/problem/1009
 """
 
-# 💡 idea. pow(a, b, mod)는 빠른 거듭제곱으로 O(log b), 모듈러 연산 활용
+# 💡 Idea. pow(a, b, mod)는 빠른 거듭제곱으로 O(log b), 모듈러 연산 활용
 
 def solution(a: int, b: int):
     last = pow(a, b, 10)
