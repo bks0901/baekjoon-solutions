@@ -11,4 +11,5 @@
 
 ## 📚 알고리즘 정리 자료
 
-- [Python 알고리즘 최적화 패턴](./docs/python_patterns.md)
+- [Python 알고리즘 최적화 패턴](./Docs/python_patterns.md)
+- [알고리즘 주요 주제](./Docs//algorithm_core_topics.md)
