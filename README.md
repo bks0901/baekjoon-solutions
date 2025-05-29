@@ -12,6 +12,7 @@
 ## 📚 알고리즘 정리 자료
 
 - [Python 알고리즘 최적화 패턴](./Docs/python_patterns.md)
+- [알고리즘 풀이 접근 순서](./Docs/algorithm_approach_structure.md)
 - [알고리즘 주요 주제](./Docs//algorithm_core_topics.md)
 - 알고리즘 주요 주제별 생각노트
   1. [복잡도](./Docs/Topics/1.%20Complexity.md)
