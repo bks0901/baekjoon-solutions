@@ -9,6 +9,58 @@
 
 <br />
 
+## 프로젝트 세팅
+
+- 이 프로젝트는 Poetry로 관리됩니다. 초기 세팅 시 다음을 따라주세요:
+
+```bash
+# (처음이라면) Poetry 설치
+curl -sSL https://install.python-poetry.org | python3 -
+
+# poetry 설치 경로가 PATH에 없다면 ~/.zshrc 등에 아래 추가
+export PATH="$HOME/.local/bin:$PATH"
+source ~/.zshrc
+
+# 이 프로젝트는 별도의 패키징이 필요 없기 때문에 pyproject.toml에 다음 코드 추가
+[tool.poetry.package-mode]
+package-mode = false
+
+# 가상환경 및 의존성 설치
+poetry install
+
+# 테스트를 위한 pytest 개발용 설치
+poetry add --group dev pytest
+
+# .vscode/settings.json를 만들고 vs code 세팅 추가
+{
+  "python.defaultInterpreterPath": ".venv/bin/python",
+  "python.venvPath": ".",
+  "python.analysis.autoSearchPaths": true,
+  "python.analysis.extraPaths": ["."],
+  "python.testing.pytestEnabled": true,
+  "python.testing.pytestArgs": ["."],
+  "python.testing.unittestEnabled": false
+}
+
+# extension 중 even better toml 설치
+```
+
+<br />
+
+## 테스트 수행
+
+- pytest는 기본적으로 테스트 파일 이름이 test\_.py 또는 \*\_test.py 형식일 때만 자동으로 인식
+
+```bash
+# 테스트 수행
+poetry run pytest
+
+# 내용을 자세히 보고 싶다면
+poetry run pytest -v
+```
+
+<br />
+
 ## 📚 알고리즘 정리 자료
 
 - [Python 알고리즘 최적화 패턴](./docs/python_patterns.md)

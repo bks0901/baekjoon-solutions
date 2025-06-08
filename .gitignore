@@ -1,0 +1,12 @@
+# Python 캐시 및 컴파일 파일
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Poetry 가상환경
+.venv/
+
+# 편집기 설정 파일
+.idea/
+*.swp
