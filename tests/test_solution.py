@@ -4,8 +4,8 @@ import importlib.util
 import pytest
 
 # 사용자 정의 경로
-SOLUTION_FILE = "./implementation/brute_force/14500_테트로미노.py"
-TESTCASE_FILE = "./implementation/brute_force/tests/14500_테트로미노_case.txt"
+SOLUTION_FILE = "./src/implementation/brute_force/14500_테트로미노.py"
+TESTCASE_FILE = "./tests/cases/14500_테트로미노_case.txt"
 
 # solution 함수 불러오기
 def load_solution(path):

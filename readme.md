@@ -43,6 +43,9 @@ poetry add --group dev pytest
 }
 
 # extension 중 even better toml 설치
+
+# 가상환경 경로 확인
+poetry env info --path
 ```
 
 <br />
